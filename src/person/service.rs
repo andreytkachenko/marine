@@ -53,5 +53,3 @@ impl PersonService {
     	diesel::delete(person.filter(id.eq(del_id))).execute(&*conn)
     }
 }
-
-unsafe impl Sync for PersonService {}
