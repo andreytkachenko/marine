@@ -1,0 +1,27 @@
+[package]
+authors = ["Andrey Tkachenko <andreytkachenko64@gmail.com>"]
+name = "marine"
+version = "0.1.0"
+
+[dependencies]
+dotenv = "0.10.1"
+lazy_static = "0.2.9"
+nickel = "0.10.0"
+serde = "1.0.16"
+serde_derive = "1.0.16"
+serde_json = "1.0.4"
+
+[dependencies.chrono]
+features = ["serde"]
+version = "0.4.0"
+
+[dependencies.diesel]
+features = [
+    "sqlite",
+    "chrono",
+]
+version = "0.16.0"
+
+[dependencies.diesel_codegen]
+features = ["sqlite"]
+version = "0.16.0"
